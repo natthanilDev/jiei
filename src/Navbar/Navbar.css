@@ -1,0 +1,121 @@
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.navbar {
+    border-bottom: 1px solid #959595;
+
+}
+
+.navbar_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.container-navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list_navbar {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #f4592f;
+    color: #ffff;
+}
+
+.signup:hover {
+    transform: translateY(-5px);
+}
+
+.labelmenu {
+    display: none;
+}
+
+#menuBox {
+    display: none;
+}
+
+.labelmenu-close {
+    display: none;
+}
+
+
+.active{
+    font-weight: bold;
+    color: #f4592f;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:950px) {
+    .labelmenu-close {
+        display: flex;
+    }
+
+    .labelmenu {
+        display: block;
+        font-size: 20px;
+    }
+
+    .moblie {
+        max-width: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        background-color: #959595e5;
+        top: 0;
+        padding: 30px 0;
+    }
+
+    .list_navbar {
+        display: flex;
+        position: sticky;
+
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .lilink {
+        color: #fff;
+    }
+
+    #menuBox:checked~.moblie {
+        max-width: 100%;
+        left: 0;
+        display: flex;
+    }
+
+    .labelmenu-close {
+        padding: 10px 13px;
+        border-radius: 50%;
+        background-color: #f4592f;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+}
