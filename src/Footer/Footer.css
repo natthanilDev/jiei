@@ -1,13 +1,50 @@
-footer {
-    background-color: aliceblue;
+footer{
+    background-color:aliceblue;
+    padding: 20px 0 0 0;
+}
+.footerBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0 auto;
+    width: 80%;
+}
+.boxlinkContact{
+      display: flex;
+    justify-content: space-between;
+    margin: 0px auto 30px auto;
+    width: 80%;
+     
+    align-items: center;
+    
+}
+.linkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+   
+}
+.linkbox a:hover{
+    color: #959595;
+}
+.areaFooter{
+    text-align: center;
 }
 
-.footerbox {
-
-    width: 90%;
-    margin: 0 auto;
+@media screen and (max-width:800px) {
+    .content{
+        display: none;
+    }
+    .footerBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    width: 80%;
 }
-
-.footer {
-   text-align: center;
+.boxlinkContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 }

@@ -1,0 +1,41 @@
+.backgroundNews {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.topicNews p {
+    font-size: 50px;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.news-card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.card-news img {
+    width: 100%;
+}
+
+.newsCard {
+    border: 1px solid #959595;
+    padding: 30px;
+}
+
+.contact-news h1 {
+    padding: 20px 0;
+}
+
+.contact-news p {
+    text-align: justify;
+}
+@media screen and (max-width : 800px) {
+    .news-card-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+}
