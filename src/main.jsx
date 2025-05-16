@@ -1,28 +1,18 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter , RouterProvider } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Index from './Index/Index'
+import NotFound from './NotFound/NotFound'
 import './main.css'
-const router = createBrowserRouter([
-  {
-    path:'/',
-    element : <Index />
-  },
-  {
-    path:'/about',
-    element : <Index />
-  },
-  {
-    path:'/news',
-    element : <Index />
-  },
-  {
-    path:'/contact',
-    element : <Index />
-  },
-])
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Index />} errorElement={<Index />}/>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </HashRouter>
+
   </StrictMode>,
 )

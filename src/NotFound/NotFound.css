@@ -1,0 +1,17 @@
+.pageNetFound{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error404{
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+.error404text{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
